@@ -1,8 +1,85 @@
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+		<script src="https://use.fortawesome.com/1ce05b4b.js"></script>
 
+		<link rel="stylesheet" href="dist\js\css\home-page.css">		
 	</head>
 	<body>
-		
+		<div class="body"> 
+			<div class="topnav" id="topnav">
+				<div class="top-bar">
+					<button class="dropbtn"><i class="fa-light fa-align-justify"></i></button>
+					<div class="dropdown-content">
+						<nav class="top-nav-bar"> 
+							<ul>
+								<li><a class="bar-item" href="/new/"><span class="ico fa-regular fa-plus"></span> New <span class="fa-thin fa-angle-down"></span></a></li>
+								<li><a class="bar-item" href="/upload/"><span class="ico fa-regular fa-up-to-line"></span> Upload <span class="fa-thin fa-angle-down"></span></a></li>
+								<li><a class="bar-item" href="/sync/"><span class="ico fa-regular fa-arrows-rotate"></span> Sync <span class="fa-thin fa-angle-down"></span></a></li>
+								<li><a class="bar-item" href="/export/"><span class="ico fa-regular fa-file-export"></span> Export to Excel <span class="fa-thin fa-angle-down"></span></a></li>
+								<li><a class="bar-item" href="/flow/"><span class="ico fa-solid fa-florin-sign"></span> Flow <span class="fa-thin fa-angle-down"></span></a></li>
+								<li><a class="bar-item" href="/more/"><span class="fa-solid fa-ellipsis"></span></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<h1>Documents</h1>
+				<div>
+					<table class="table" id="demoTable">
+						<thead>
+							<tr>
+								<th><span class="fa-light fa-file" id="file-icon"></span></th>
+								<th>Name <span class="fa-light fa-angle-down"></span></th>
+								<th>Modified <span class="fa-light fa-angle-down"></span></th>
+								<th>Modified By <span class="fa-light fa-angle-down"></span></th>
+								<th><span class="fa-light fa-plus"></span> Add column</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="fa-solid fa-folders" id="file-icon"></span></td>
+								<td>CAS</td>
+								<td>April 30</td>
+								<td>Megan Bowen</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td><span class="fa-regular fa-file-excel" id="file-icon"></span></td>
+								<td>CoasterAndBargeLoading.xlsx</td>
+								<td>A few seconds ago</td>
+								<td>Administrator MOD</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td><span class="fa-regular fa-file-excel" id="file-icon"></span></td>
+								<td>RevenueByServices.xlsx</td>
+								<td>A few seconds ago</td>
+								<td>Administrator MOD</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td><span class="fa-regular fa-file-excel" id="file-icon"></span></td>
+								<td>RevenueByServices2016.xlsx</td>
+								<td>A few seconds ago</td>
+								<td>Administrator MOD</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td><span class="fa-regular fa-file-excel" id="file-icon"></span></td>
+								<td>RevenueByServices2017.xlsx</td>
+								<td>A few seconds ago</td>
+								<td>Administrator MOD</td>
+								<td> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+
+			</div>
+		</div>
 	</body>
 </html>

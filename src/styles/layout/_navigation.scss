@@ -1,0 +1,82 @@
+@import '../utilities/variables';
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;;
+    background-color: #e2e2e2;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .dropbtn{
+     display: none;
+    }
+    .bar-item {
+        padding: 10px;
+    }
+    li {
+        float: left;
+      }
+    li a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover:not(.active) {
+        background-color: $background-color;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .topnav{
+      background-color: #e2e2e2;
+      padding: 20px;
+    }
+    .top-bar {
+      float: right;
+      position: relative;
+      display: inline-block;
+      top: -14px;
+      right: -8px;
+    }
+    .dropbtn{
+      background-color: $background-color;
+      color: black;
+      padding: 8px;
+      font-size: 16px;
+      border: 0.5px solid #ccc;
+      cursor: pointer;
+      padding: 5px 5px;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: $background-color;
+      min-width: 500px;
+      z-index: 1;
+    }
+
+    .dropdown-content li a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content li a:hover {
+        background-color: $background-color;
+    }
+
+    .top-bar:hover .dropdown-content {
+      display: block;
+    }
+
+}
