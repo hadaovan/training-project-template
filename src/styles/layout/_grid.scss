@@ -1,78 +1,83 @@
-@import '../utilities/variables';
-
 @media only screen and (min-width: 768px) {
-    /* For desktop: */
+    // For desktop:
+    h1 {
+      font-family: sans-serif;
+      //padding-left: 20px;
+      padding-left: plus_num(15px);
+      font-weight: lighter;
+    }
    table {
      border-collapse: collapse;
      width: 100%;
    }
    th, td {
-     padding: 8px;
-     text-align: left;
+     padding: plus_num(3px);
      border-bottom: $border-bottom;
+     @include size-text;
    }
    #file-icon {
-     float: right;    
-     padding: auto;
+     @include icon-align;
    }
  }
 
  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    /* Force table to not be like tables anymore */
+    // For mobile phones:
+    h1 {
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+    // Force table to not be like tables anymore
     table, thead, tbody, th, td, tr {
       display: block;
     }
-    /* Hide table headers (but not display: none;, for accessibility) */
+    // Hide table headers (but not display: none)
     thead tr {
       position: absolute;
       top: -9999px;
       left: -9999px;
     }
     tr {
-      border: 0.5px solid #ccc;
+      border: 0.5px solid $graylight;
     }
     #file-icon {
-      float: right;    
-      padding: 8px;
+      @include icon-align;
     }
     #demoTable td {
-      /* Behave  like a "row" */
+      // Behave  like a "row"
       border: none;
       border-bottom: $border-bottom;
       position: relative;
-      padding-left: 25%;
-      height:25px;
-      text-align: left;
+      padding-left: 28%;
+      height: plus_num(20px);
+      @include size-text;
     }
     td:before {
-      /* Now like a table header */
+      // Now like a table header 
       position: absolute;
-      /* Top/left values mimic padding */
-      top: 6px;
-      left: 6px;
+      top: plus_num(1px);
+      left: plus_num(1px);
       width: 20%;
-      padding-right: 10px;
+      //padding-right: 10px;
+      padding-right: plus_num(5px);
       white-space: nowrap;
-      font-family: sans-serif;
       font-style: italic;
       font-weight: bold;
+      @include size-text;
     }
-      td:nth-of-type(1):before {
-        content: "File Type";
-      }
-      td:nth-of-type(2):before {
-        content: "Name";
-      }
-      td:nth-of-type(3):before {
-        content: "Modified";
-      }
-      td:nth-of-type(4):before {
-        content: "Modified By";
-      }
-      td:nth-child(1){
-        background-color: $background-color;
-        height: auto;
-      }
-  
+    td:nth-of-type(1):before {
+      content: "File Type";
+    }
+    td:nth-of-type(2):before {
+      content: "Name";
+    }
+    td:nth-of-type(3):before {
+      content: "Modified";
+    }
+    td:nth-of-type(4):before {
+      content: "Modified By";
+    }
+    td:nth-child(1){
+      background-color: $background-color;
+      height: auto;
+    }     
   }

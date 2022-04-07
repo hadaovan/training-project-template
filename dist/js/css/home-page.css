@@ -1,20 +1,23 @@
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   overflow: hidden;
   border: 1px solid #e7e7e7;
   background-color: #e2e2e2;
 }
 
+.bar-item {
+  padding: 10px;
+}
+
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
   .dropbtn {
     display: none;
   }
 
-  .bar-item {
-    padding: 10px;
+  .ico {
+    color: palevioletred;
   }
 
   li {
@@ -28,13 +31,11 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
-
   li a:hover:not(.active) {
     background-color: #ddd;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
   .topnav {
     background-color: #e2e2e2;
     padding: 20px;
@@ -73,7 +74,6 @@ ul {
     text-decoration: none;
     display: block;
   }
-
   .dropdown-content li a:hover {
     background-color: #ddd;
   }
@@ -83,7 +83,12 @@ ul {
   }
 }
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
+  h1 {
+    font-family: sans-serif;
+    padding-left: 20px;
+    font-weight: lighter;
+  }
+
   table {
     border-collapse: collapse;
     width: 100%;
@@ -91,8 +96,11 @@ ul {
 
   th, td {
     padding: 8px;
-    text-align: left;
     border-bottom: 1px solid #ddd;
+    color: black;
+    font-size: 18px;
+    font-family: Tahoma;
+    text-align: left;
   }
 
   #file-icon {
@@ -101,13 +109,15 @@ ul {
   }
 }
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  /* Force table to not be like tables anymore */
+  h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
   table, thead, tbody, th, td, tr {
     display: block;
   }
 
-  /* Hide table headers (but not display: none;, for accessibility) */
   thead tr {
     position: absolute;
     top: -9999px;
@@ -120,31 +130,34 @@ ul {
 
   #file-icon {
     float: right;
-    padding: 8px;
+    padding: auto;
   }
 
   #demoTable td {
-    /* Behave  like a "row" */
     border: none;
     border-bottom: 1px solid #ddd;
     position: relative;
-    padding-left: 25%;
+    padding-left: 28%;
     height: 25px;
+    color: black;
+    font-size: 18px;
+    font-family: Tahoma;
     text-align: left;
   }
 
   td:before {
-    /* Now like a table header */
     position: absolute;
-    /* Top/left values mimic padding */
     top: 6px;
     left: 6px;
     width: 20%;
     padding-right: 10px;
     white-space: nowrap;
-    font-family: sans-serif;
     font-style: italic;
     font-weight: bold;
+    color: black;
+    font-size: 18px;
+    font-family: Tahoma;
+    text-align: left;
   }
 
   td:nth-of-type(1):before {
