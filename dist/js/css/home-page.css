@@ -42,17 +42,17 @@ ul {
   }
 
   .top-bar {
-    float: right;
     position: relative;
-    display: inline-block;
+    display: block;
     top: -14px;
     right: -8px;
+    width: 100%;
   }
 
   .dropbtn {
+    float: right;
     background-color: #ddd;
     color: black;
-    padding: 8px;
     font-size: 16px;
     border: 0.5px solid #ccc;
     cursor: pointer;
@@ -62,9 +62,11 @@ ul {
   .dropdown-content {
     display: none;
     position: absolute;
-    right: 0;
     background-color: #ddd;
-    min-width: 500px;
+    border: 1px solid #ddd;
+    right: 0;
+    top: 32px;
+    width: 100%;
     z-index: 1;
   }
 

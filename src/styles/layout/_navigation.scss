@@ -42,16 +42,16 @@ ul {
       padding: plus_num(15px);
     }
     .top-bar {
-      float: right;
       position: relative;
-      display: inline-block;
+      display: block;
       top: -14px;
       right: -8px;
+      width: 100%;
     }
     .dropbtn{
+      float: right;
       background-color: $background-color;
       color: black;
-      padding: plus_num(3px);
       //font-size: 16px;
       font-size: plus_num(11px);
       border: 0.5px solid $graylight;
@@ -61,11 +61,14 @@ ul {
     .dropdown-content {
       display: none;
       position: absolute;
-      right: 0;
       background-color: $background-color;
-      min-width: 500px;
+      border: $border-bottom;
+      right: 0;
+      top: plus_num(27px);
+      width: 100%;
       z-index: 1;
     }
+
     .dropdown-content {
       li
       { 
