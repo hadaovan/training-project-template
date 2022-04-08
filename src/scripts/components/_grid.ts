@@ -3,3 +3,13 @@ const renderGrid = () => {
 };
 
 export default renderGrid;
+
+import { File } from "./_file";
+
+export interface Files {
+  [key: number]: File;
+}
+
+
+
+//------Example

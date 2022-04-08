@@ -50,6 +50,7 @@ ul {
     }
     .dropbtn{
       float: right;
+      position: relative;
       background-color: $background-color;
       color: black;
       //font-size: 16px;
@@ -86,4 +87,8 @@ ul {
     .top-bar:hover .dropdown-content {
       display: block;
     }
+    /*.dropbtn:hover .dropdown-content{
+      display: block;
+    }*/
+
 }
