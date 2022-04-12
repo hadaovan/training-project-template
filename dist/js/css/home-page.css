@@ -114,6 +114,10 @@ ul {
     float: right;
     padding: auto;
   }
+
+  table.list {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1 {
@@ -188,23 +192,31 @@ ul {
     height: auto;
   }
 }
-.bar-item {
-  padding: 10px;
-}
-
-.ico {
-  color: palevioletred;
-}
-
-table {
-  border-collapse: collapse;
+input[type=text], input[type=date], select {
   width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-th, td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+input[type=submit] {
+  width: 30%;
+  border: none;
+  background-color: #ddd;
+  padding: 14px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.btn {
+  width: 30%;
+  background-color: beige;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=home-page.css.map*/

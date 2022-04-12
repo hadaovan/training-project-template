@@ -1,0 +1,47 @@
+[
+    {
+        "id": "fo1",
+        "name": "CAS",
+        "type": "folder",
+        "created_at": "",
+        "created_by": "",
+        "modified_at": "April 30",
+        "modified_by": "Megan Bowen"
+    },
+    {
+        "id": "fi1",
+        "name": "CoasterAndBargeLoading.xlsx",
+        "type": "xlsx",
+        "created_at": "",
+        "created_by": "",
+        "modified_at": "A few seconds ago",
+        "modified_by": "Administrator MOD"
+    },
+    {
+        "id": "fi2",
+        "name": "RevenueByServices.xlsx",
+        "type": "xlsx",
+        "created_at": "",
+        "created_by": "",
+        "modified_at": "A few seconds ago",
+        "modified_by": "Administrator MOD"
+    },
+    {
+        "id": "fi3",
+        "name": "RevenueByServices2016.xlsx",
+        "type": "xlsx",
+        "created_at": "",
+        "created_by": "",
+        "modified_at": "A few seconds ago",
+        "modified_by": "Administrator MOD"
+    },
+    {
+        "id": "fi4",
+        "name": "RevenueByServices2017.xlsx",
+        "type": "xlsx",
+        "created_at": "",
+        "created_by": "",
+        "modified_at": "A few seconds ago",
+        "modified_by": "Administrator MOD"
+    }
+  ]

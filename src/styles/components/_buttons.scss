@@ -1,0 +1,26 @@
+input[type=text], input[type=date], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid $graylight;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    border: none;
+    background-color: $graylighter;
+    padding: 14px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.btn{
+    width: 30%;
+    background-color: beige;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,15 +1,13 @@
+import {getAll} from '_file';
+
 const renderGrid = () => {
   // TODO: implement code to Render grid
+  const ListFile = getAll()
+  console.log(ListFile)
+
+  
 };
 
 export default renderGrid;
 
-import { File } from "./_file";
 
-export interface Files {
-  [key: number]: File;
-}
-
-
-
-//------Example

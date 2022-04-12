@@ -13,11 +13,20 @@
    th, td {
      padding: plus_num(3px);
      border-bottom: $border-bottom;
-     @include size-text;
+     @include text-primary;
    }
    #file-icon {
      @include icon-align;
    }
+
+   table.list{
+    width: 100%;
+  }
+
+  //tr:nth-child(even),table.list thead>tr {
+  //    background-color: $graylighter;
+  //} 
+
  }
 
  @media only screen and (max-width: 768px) {
@@ -49,7 +58,7 @@
       position: relative;
       padding-left: 28%;
       height: plus_num(20px);
-      @include size-text;
+      @include text-primary;
     }
     td:before {
       // Now like a table header 
@@ -62,7 +71,7 @@
       white-space: nowrap;
       font-style: italic;
       font-weight: bold;
-      @include size-text;
+      @include text-primary;
     }
     td:nth-of-type(1):before {
       content: "File Type";
